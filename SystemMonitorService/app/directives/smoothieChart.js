@@ -16,8 +16,8 @@
             chart.addTimeSeries(values, { strokeStyle: 'rgba(0, 255, 0, 1)', fillStyle: 'rgba(0, 255, 0, 0.2)', lineWidth: 4 });
             chart.streamTo(elem[0], 1000);
 
-            scope.$watch(attrs.data, function (newScopeData) {
-                values.append(new Date().getTime(), parseFloat(newScopeData));
+            scope.$watch(attrs.data, function (data) {
+                values.append(new Date().getTime(), parseFloat(data));
             });
 
             function doResize() {

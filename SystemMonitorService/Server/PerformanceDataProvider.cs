@@ -28,7 +28,7 @@ namespace SystemMonitorService
             hub.Clients.All.newDiskValue(new { value = diskValue });
         }
 
-        public void Stop(bool immediate)
+        public void Stop()
         {
             taskTimer.Dispose();
         }

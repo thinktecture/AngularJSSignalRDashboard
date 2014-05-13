@@ -2,18 +2,18 @@
     monitoringService.init($scope);
 
     $scope.diskSeries = [
-     	{ key: "Free", y: 50 },
-        { key: "Used", y: 50 }
+     	{ category: "Free", percentage: 50 },
+        { category: "Used", percentage: 50 }
     ];
 
     $scope.xFunction = function () {
         return function (d) {
-            return d.key;
+            return d.category;
         };
     }
     $scope.yFunction = function () {
         return function (d) {
-            return d.y;
+            return d.percentage;
         };
     }
 
@@ -24,8 +24,8 @@
     $scope.$on("newDiskValue", function (evt, data) {
         $scope.$apply(function () {
             var newValue = [
-                { key: "Free", y: data.value },
-                { key: "Used", y: 100 - data.value }
+                { category: "Free", percentage: data.value },
+                { category: "Used", percentage: 100 - data.value }
             ];
             $scope.diskSeries = newValue;
         });

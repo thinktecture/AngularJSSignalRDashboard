@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using Topshelf;
 
 namespace SystemMonitorService
@@ -20,9 +21,9 @@ namespace SystemMonitorService
                 x.SetDescription("Thinktecture System Monitoring Server");
                 x.SetDisplayName("System Monitoring Server");
                 x.SetServiceName("SystemMonitoringServer");
-            });
 
-            Console.ReadLine();
+                Process.Start("https://localhost:7778/app");
+            });
         }
     }
 }
