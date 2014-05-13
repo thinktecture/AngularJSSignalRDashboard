@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemMonitorService", "SystemMonitorService\SystemMonitorService.csproj", "{EFEE7213-E03C-4EAE-978B-BC92A58B0D61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFEE7213-E03C-4EAE-978B-BC92A58B0D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFEE7213-E03C-4EAE-978B-BC92A58B0D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFEE7213-E03C-4EAE-978B-BC92A58B0D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFEE7213-E03C-4EAE-978B-BC92A58B0D61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
