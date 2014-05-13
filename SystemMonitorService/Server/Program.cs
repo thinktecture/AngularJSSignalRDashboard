@@ -16,7 +16,7 @@ namespace SystemMonitorService
                     s.WhenStopped(tc => tc.OnStop());
                 });
                 x.RunAsNetworkService();
-
+                
                 x.SetDescription("Thinktecture System Monitoring Server");
                 x.SetDisplayName("System Monitoring Server");
                 x.SetServiceName("SystemMonitoringServer");

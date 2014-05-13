@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Microsoft.Owin.Hosting;
 
 namespace SystemMonitorService
@@ -9,7 +10,10 @@ namespace SystemMonitorService
 
         public void OnStart()
         {
-            server = WebApp.Start<Startup>("http://localhost:7777");
+            server = WebApp.Start<Startup>("http://*:7777");
+
+            // TODO: Exception handling
+            Task.Factory.StartNew(() => new PerformanceDataProvider());
         }
 
         public void OnStop()
