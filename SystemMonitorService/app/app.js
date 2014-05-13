@@ -7,5 +7,5 @@ myApp.config(function ($routeProvider) {
 });
 
 myApp.run(function () {
-
+    FastClick.attach(document.body);
 });
