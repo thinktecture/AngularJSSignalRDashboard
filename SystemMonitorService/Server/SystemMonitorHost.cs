@@ -10,7 +10,7 @@ namespace SystemMonitorService
 
         public void OnStart()
         {
-            server = WebApp.Start<Startup>("http://*:7777");
+            server = WebApp.Start<Startup>("https://+:7778");
 
             // TODO: Exception handling
             Task.Factory.StartNew(() => new PerformanceDataProvider());
