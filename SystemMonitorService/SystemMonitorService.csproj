@@ -160,7 +160,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="App.config" />
-    <Content Include="app\index.html">
+    <Content Include="index.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="libs\10_bootstrap\css\bootstrap-theme.css.map">

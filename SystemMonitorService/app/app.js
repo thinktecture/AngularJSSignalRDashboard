@@ -2,7 +2,7 @@
 
 myApp.config(function ($routeProvider) {
     $routeProvider
-        .when("/", { templateUrl: "monitoring/monitor.html", controller: "monitoringController" })
+        .when("/", { templateUrl: "app/monitoring/monitor.html", controller: "monitoringController" })
         .otherwise({ redirectTo: "/" });
 });
 

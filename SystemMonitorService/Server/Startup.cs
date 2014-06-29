@@ -11,8 +11,8 @@ namespace SystemMonitorService
         {
             var appOptions = new FileServerOptions
             {
-                RequestPath = new PathString("/app"),
-                FileSystem = new PhysicalFileSystem("app"),
+                RequestPath = new PathString(""),
+                FileSystem = new PhysicalFileSystem(""),
                 EnableDefaultFiles = true
             };
             appOptions.DefaultFilesOptions.DefaultFileNames.Add("index.html");

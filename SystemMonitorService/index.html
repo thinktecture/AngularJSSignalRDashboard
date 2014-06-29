@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link href="app/logo.png" sizes="120x120" rel="apple-touch-icon">
+
+    <title>Thinktecture System Monitor</title>
+    <style>
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, . {
+            display: none !important;
+        }
+    </style>
+
+    <link href="libs/10_bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="libs/80_stuff/sb-admin.css" rel="stylesheet" />
+    <link href="libs/70_font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="libs/40_nvd3/nv.d3.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div tt-navbar></div>
+        <div id="page-wrapper" ng-view class="ng-cloak">
+
+        </div>
+    </div>
+
+    <script src="libs/15_jquery/jquery-1.11.1.js"></script>
+    <script src="libs/10_bootstrap/js/bootstrap.js"></script>
+    <script src="libs/20_angular/angular.js"></script>
+    <script src="libs/25_angular_addons/angular-route.js"></script>
+    <script src="libs/30_d3/d3.js"></script>
+    <script src="libs/40_nvd3/nv.d3.js"></script>
+    <script src="libs/50_nvd3-angular/angularjs-nvd3-directives.js"></script>
+    <script src="libs/80_stuff/jquery.signalr-2.0.3.js"></script>
+    <script src="libs/80_stuff/jquery.metismenu.js"></script>
+    <script src="libs/80_stuff/sb-admin.js"></script>
+    <script src="libs/80_stuff/smoothie.js"></script>
+    <script src="libs/80_stuff/fastclick.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/navigation/navigation.js"></script>
+    <script src="app/services/monitoringservice.js"></script>
+    <script src="app/monitoring/monitor.js"></script>
+    <script src="app/directives/smoothiechart.js"></script>
+</body>
+</html>
