@@ -1,5 +1,5 @@
 ﻿myApp.factory("monitoringService", function ($timeout) {
-    var url = "https://windows8vm.local:7778";
+    var url = "http://windows8vm.local:7774";
     var service = {};
 
     var connection = $.hubConnection(url);

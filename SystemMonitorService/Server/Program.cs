@@ -22,7 +22,7 @@ namespace SystemMonitorService
                 x.SetDisplayName("System Monitoring Server");
                 x.SetServiceName("SystemMonitoringServer");
 
-                Process.Start("https://localhost:7778/");
+                Process.Start("http://localhost:7774/");
             });
         }
     }
