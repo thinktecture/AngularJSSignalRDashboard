@@ -1,4 +1,5 @@
 ﻿using Microsoft.Owin;
+using Microsoft.Owin.Cors;
 using Microsoft.Owin.FileSystems;
 using Microsoft.Owin.StaticFiles;
 using Owin;
@@ -30,6 +31,8 @@ namespace SystemMonitorService
             app.UseFileServer(libsOptions);
 
             app.UseErrorPage();
+
+            app.UseCors(CorsOptions.AllowAll);
             app.MapSignalR();
         }
     }

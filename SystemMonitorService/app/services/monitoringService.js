@@ -1,7 +1,8 @@
 ﻿myApp.factory("monitoringService", function ($timeout) {
+    var url = "https://windows8vm.local:7778";
     var service = {};
 
-    var connection = $.hubConnection();
+    var connection = $.hubConnection(url);
     connection.logging = true;
 
     var hubProxy = connection.createHubProxy("performanceDataHub");
